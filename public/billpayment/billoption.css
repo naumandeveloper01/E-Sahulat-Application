@@ -1,0 +1,936 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*
+================================================ 
+  static classes
+================================================ 
+*/
+.button,
+.btn {
+  cursor: pointer;
+}
+.block {
+  display: block !important;
+}
+.show {
+  visibility: visible;
+}
+.none {
+  display: none !important;
+  visibility: hidden;
+}
+.hide {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.m-5 {
+  margin: 5px 0px;
+}
+.p-5 {
+  border-bottom: 1px solid gray;
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+.p-10 {
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid gray;
+}
+input:hover,
+input:focus {
+  outline: none;
+}
+input {
+  width: 100%;
+  outline: none;
+  padding: 3px 20px;
+}
+/*
+=========
+  Body
+=========
+*/
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+==============================
+  Media Query for responsivenes
+==============================
+ */
+@media screen and (max-width: 1498px) {
+  .andriod {
+    width: 300px;
+    overflow: hidden;
+    height: 500px;
+    border: 2px solid #000;
+    padding: 20px;
+    background: #000;
+    border-radius: 20px;
+  }
+  .andriodScreen {
+    width: 267px;
+    height: 454px;
+    margin-left: -6px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid gray;
+    background: url("../../assert/login/login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  /*
+======================= 
+  Mobile Main Buttons
+======================= 
+*/
+
+  .androidonofflight {
+    position: absolute;
+    top: 55px;
+    right: 609px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .mainbtn,
+  .volumeup,
+  .volumedown {
+    position: absolute;
+    background: #000;
+    border: 2px solid red;
+    width: 10px;
+  }
+  .volumeup,
+  .volumedown {
+    height: 20px;
+    left: 590px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .volumeup {
+    top: 250px;
+  }
+
+  .volumedown {
+    top: 279px;
+  }
+  .mainbtn {
+    top: 230px;
+    right: 588px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 25px;
+  }
+
+  /*
+=========================== 
+    End Main Buttons Here
+=========================== 
+*/
+  .billoption {
+    width: 265px;
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+  }
+  .billoption .optionlist {
+    width: 100%;
+    height: 130px;
+    display: flex;
+  }
+
+  .billoption .optionlist .first {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .billoption .body {
+    width: 100%;
+    height: 300px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+  .selectcmpy {
+    width: 100%;
+    height: 30px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .down {
+    font-size: 13px;
+  }
+  /* .text {
+}
+.icon {
+} */
+
+  .companylist,
+  .companylist2 {
+    position: absolute;
+    top: 300px;
+    width: 240px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  /* visibility: hidden; */
+  .companylist .heading,
+  .companylist2 .heading {
+    width: 100%;
+  }
+  div.companylist > p:nth-child(3),
+  .companylist h4 {
+    padding: 9px 9px 4px 9px;
+    border-bottom: 1px solid #000;
+    margin: 0px 0px 6px 0px;
+  }
+  .companylist2 h4 {
+    padding: 10px;
+  }
+
+  .companylist .search,
+  .companylist2 .search {
+    width: 100%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+  }
+  .companylist .img,
+  .companylist2 .img {
+    /* width: ; */
+    width: 15%;
+    height: 28px;
+    background: red;
+    margin: 0px 10px;
+  }
+  .companylist .input,
+  .companylist2 .input {
+    width: 85%;
+    height: 28px;
+    margin-right: 10px;
+  }
+  .companylist input:hover,
+  .companylist input:focus,
+  .companylist2 input:hover,
+  .companylist2 input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  .companylist input,
+  .companylist2 input {
+    width: 100%;
+    height: 28px;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+  }
+  .companylist .selected,
+  .companylist2 .selectednumber {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  /* 
+=====================
+   switchbox 
+=====================
+ */
+
+  .switchbox * {
+    color: white;
+  }
+  .switchbox {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /* 
+=====================
+   tooglebtn 
+=====================
+ */
+  .switchbox .tooglebtn {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+  }
+  /* 
+======================================
+   space enble/disable password field
+======================================
+ */
+  .switchbox .tooglebtn .space {
+    position: relative;
+    width: 45px;
+    height: 25px;
+    background: gray;
+    border: none;
+    border-radius: 20px;
+    transition: background 0.8s;
+  }
+  .switchbox .tooglebtn .circle {
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    height: 25px;
+    outline: none;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  .switchbox .tooglebtn .circle.move {
+    left: 23px !important;
+  }
+  .tooglebtn .space.bg {
+    background: red !important;
+  }
+  #consumernumber,
+  #password,
+  #mobilenb {
+    margin-top: 10px;
+  }
+  /* {
+  margin: 10px 0px;
+} */
+  .selectcmpy2 {
+    width: 100%;
+    height: 50px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .selectcmpy2 .text {
+    width: 70%;
+  }
+  .down2 {
+    width: 10%;
+    font-size: 13px;
+  }
+
+  .companylist2 {
+    height: 250px;
+  }
+  /* 
+======================
+  New Screen Create here
+======================
+
+  ======================
+    paybillscreen
+  ======================
+
+ */
+  .paybill:hover,
+  .paybill:focus,
+  .paybill {
+    position: relative;
+    background: red;
+    color: white;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+  }
+
+  .paybillscreen p {
+    color: skyblue;
+    /* padding: 10px 20px; */
+    /* overflow: scroll; */
+  }
+  .paybillscreen input {
+    color: #000;
+  }
+  .buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buttons > button {
+    width: 100px;
+    height: 33px;
+    background: #f00;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    outline: none;
+  }
+
+  /*
+====================================
+    the bill is paid box will show
+====================================
+
+ */
+
+  .billpaid {
+    position: absolute;
+    width: 17%;
+    height: 280px;
+    background: #f5f5f5;
+    display: flex;
+    top: 250px;
+    flex-direction: column;
+  }
+  .billpaid .head {
+    width: 100%;
+    height: 70px;
+    background: #f00;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+  }
+  .billpaid .head .icon {
+    width: 14%;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 9px 0px 20px;
+  }
+
+  .billpaid .head h4 {
+    /* padding: 10px 0px 0px 12px; */
+    margin: 10px;
+  }
+  /* element.style {
+  margin: 0px auto;
+} */
+  .billpaid .body {
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .billpaid .body > p {
+    padding: 19px 8px;
+  }
+  .billpaid .complete {
+    margin: 0px 50% 0px 39%;
+    padding: 4px 9px;
+    color: white;
+    background: red;
+  }
+  .billpaid .complete:focus,
+  .billpaid .complete:hover,
+  .billpaid .complete {
+    border: none;
+    outline: none;
+  }
+}
+@media screen and (max-width: 1441px) {
+  .andriod {
+    width: 300px;
+    overflow: hidden;
+    height: 500px;
+    border: 2px solid #000;
+    padding: 20px;
+    background: #000;
+    border-radius: 20px;
+  }
+  .andriodScreen {
+    width: 267px;
+    height: 454px;
+    margin-left: -6px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid gray;
+    background: url("../../assert/login/login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  /*
+======================= 
+  Mobile Main Buttons
+======================= 
+*/
+
+  .androidonofflight {
+    position: absolute;
+    top: 55px;
+    right: 609px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .mainbtn,
+  .volumeup,
+  .volumedown {
+    position: absolute;
+    background: #000;
+    border: 2px solid red;
+    width: 10px;
+  }
+  .volumeup,
+  .volumedown {
+    height: 20px;
+    left: 560px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .volumeup {
+    top: 190px;
+  }
+
+  .volumedown {
+    top: 225px;
+  }
+  .mainbtn {
+    top: 170px;
+    right: 560px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 25px;
+  }
+
+  /*
+=========================== 
+    End Main Buttons Here
+=========================== 
+*/
+  .billoption {
+    width: 265px;
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+  }
+  .billoption .optionlist {
+    width: 100%;
+    height: 130px;
+    display: flex;
+  }
+
+  .billoption .optionlist .first {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .billoption .body {
+    width: 100%;
+    height: 300px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+  .selectcmpy {
+    width: 100%;
+    height: 30px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .down {
+    font-size: 13px;
+  }
+  /* .text {
+}
+.icon {
+} */
+
+  .companylist,
+  .companylist2 {
+    position: absolute;
+    top: 300px;
+    width: 240px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  /* visibility: hidden; */
+  .companylist .heading,
+  .companylist2 .heading {
+    width: 100%;
+  }
+  div.companylist > p:nth-child(3),
+  .companylist h4 {
+    padding: 9px 9px 4px 9px;
+    border-bottom: 1px solid #000;
+    margin: 0px 0px 6px 0px;
+  }
+  .companylist2 h4 {
+    padding: 10px;
+  }
+
+  .companylist .search,
+  .companylist2 .search {
+    width: 100%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+  }
+  .companylist .img,
+  .companylist2 .img {
+    /* width: ; */
+    width: 15%;
+    height: 28px;
+    background: red;
+    margin: 0px 10px;
+  }
+  .companylist .input,
+  .companylist2 .input {
+    width: 85%;
+    height: 28px;
+    margin-right: 10px;
+  }
+  .companylist input:hover,
+  .companylist input:focus,
+  .companylist2 input:hover,
+  .companylist2 input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  .companylist input,
+  .companylist2 input {
+    width: 100%;
+    height: 28px;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+  }
+  .companylist .selected,
+  .companylist2 .selectednumber {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  /* 
+=====================
+   switchbox 
+=====================
+ */
+
+  .switchbox * {
+    color: white;
+  }
+  .switchbox {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /* 
+=====================
+   tooglebtn 
+=====================
+ */
+  .switchbox .tooglebtn {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+  }
+  /* 
+======================================
+   space enble/disable password field
+======================================
+ */
+  .switchbox .tooglebtn .space {
+    position: relative;
+    width: 45px;
+    height: 25px;
+    background: gray;
+    border: none;
+    border-radius: 20px;
+    transition: background 0.8s;
+  }
+  .switchbox .tooglebtn .circle {
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    height: 25px;
+    outline: none;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  .switchbox .tooglebtn .circle.move {
+    left: 23px !important;
+  }
+  .tooglebtn .space.bg {
+    background: red !important;
+  }
+  #consumernumber,
+  #password,
+  #mobilenb {
+    margin-top: 10px;
+  }
+  /* {
+  margin: 10px 0px;
+} */
+  .selectcmpy2 {
+    width: 100%;
+    height: 50px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .selectcmpy2 .text {
+    width: 70%;
+  }
+  .down2 {
+    width: 10%;
+    font-size: 13px;
+  }
+
+  .companylist2 {
+    height: 250px;
+  }
+  /* 
+======================
+  New Screen Create here
+======================
+
+  ======================
+    paybillscreen
+  ======================
+
+ */
+  .paybill:hover,
+  .paybill:focus,
+  .paybill {
+    position: relative;
+    background: red;
+    color: white;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+  }
+
+  .paybillscreen p {
+    color: skyblue;
+    /* padding: 10px 20px; */
+    /* overflow: scroll; */
+  }
+  .paybillscreen input {
+    color: #000;
+  }
+  .buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buttons > button {
+    width: 100px;
+    height: 33px;
+    background: #f00;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    outline: none;
+  }
+
+  /*
+====================================
+    the bill is paid box will show
+====================================
+
+ */
+
+  .billpaid {
+    position: absolute;
+    width: 17%;
+    height: 280px;
+    background: #f5f5f5;
+    display: flex;
+    top: 250px;
+    flex-direction: column;
+  }
+  .billpaid .head {
+    width: 100%;
+    height: 70px;
+    background: #f00;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+  }
+  .billpaid .head .icon {
+    width: 14%;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 9px 0px 20px;
+  }
+
+  .billpaid .head h4 {
+    /* padding: 10px 0px 0px 12px; */
+    margin: 10px;
+  }
+  /* element.style {
+  margin: 0px auto;
+} */
+  .billpaid .body {
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .billpaid .body > p {
+    padding: 19px 8px;
+  }
+  .billpaid .complete {
+    margin: 0px 50% 0px 39%;
+    padding: 4px 9px;
+    color: white;
+    background: red;
+  }
+  .billpaid .complete:focus,
+  .billpaid .complete:hover,
+  .billpaid .complete {
+    border: none;
+    outline: none;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .mainbtn {
+    right: 352px;
+  }
+  .androidonofflight {
+    right: 399px;
+  }
+  .volumeup,
+  .volumedown {
+    left: 353px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .button {
+    cursor: pointer;
+  }
+  .mainbtn {
+    right: 215px;
+    cursor: pointer;
+  }
+  .volumedown,
+  .volumeup {
+    left: 215px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .mainbtn {
+    right: 224px;
+  }
+  .androidonofflight {
+    right: 269px;
+  }
+  .volumeup,
+  .volumedown {
+    left: 225px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .mainbtn {
+    right: 53px;
+  }
+  .androidonofflight {
+    right: 109px;
+  }
+  .volumeup,
+  .volumedown {
+    left: 53px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .mainbtn {
+    right: 27px;
+  }
+  .androidonofflight {
+    right: 79px;
+  }
+  .volumeup,
+  .volumedown {
+    left: 28px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainbtn {
+    right: 0px;
+  }
+  .androidonofflight {
+    right: 59px;
+  }
+  .volumeup,
+  .volumedown {
+    left: 28px;
+  }
+}

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*
+================================================ 
+  static classes
+================================================ 
+*/
+.button {
+  cursor: pointer;
+}
+.bold {
+  font-weight: bolder;
+}
+.block {
+  display: block !important;
+}
+.none {
+  display: none !important;
+}
+/*
+=========
+  Body
+=========
+*/
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.andriod {
+  width: 300px;
+  overflow: hidden;
+  height: 500px;
+  border: 2px solid #000;
+  padding: 20px;
+  background: #000;
+  border-radius: 20px;
+}
+.andriodScreen {
+  width: 267px;
+  height: 454px;
+  margin-left: -6px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid gray;
+  background: url("../../assert/login/login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/*
+======================= 
+  Mobile Main Buttons
+======================= 
+*/
+
+.androidonofflight {
+  position: absolute;
+  top: 141px;
+  right: 640px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.mainbtn,
+.volumeup,
+.volumedown {
+  position: absolute;
+  background: #000;
+  border: 2px solid red;
+  width: 10px;
+}
+.volumeup,
+.volumedown {
+  height: 20px;
+  left: 590px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.volumeup {
+  top: 300px;
+}
+
+.volumedown {
+  top: 325px;
+}
+.mainbtn {
+  top: 260px;
+  right: 589px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 25px;
+}
+
+/*
+=========================== 
+    End Main Buttons Here
+=========================== 
+*/
+
+/*
+=========================== 
+    Dashboard section
+=========================== 
+*/
+.dashboard {
+  width: 265px;
+  height: 452px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.accountinfo {
+  width: 100%;
+  height: 100px;
+  background: #ffcd88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+
+.head {
+  width: 100%;
+  height: 100px;
+  background: url("../../assert/dashboard/header/head.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body * {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+
+.body .firstpart,
+.body .secondpart {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.body .firstpart .part1,
+.body .firstpart .part2,
+.body .secondpart .part1,
+.body .secondpart .part2 {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body .firstpart .part1,
+.body .firstpart .part2 {
+  margin-top: 15px;
+}
+.body .firstpart .part1 > img {
+  width: 60px;
+  height: 60px;
+}
+.body .secondpart .part1,
+.body .secondpart .part2 {
+  margin-top: 20px;
+}
+.body .firstpart .part2 > img {
+  width: 60px;
+  height: 60px;
+}
+.body .secondpart .part1 > img {
+  width: 50px;
+  height: 60px;
+}
+.body .secondpart .part2 > img {
+  width: 50px;
+  height: 60px;
+}
+.box * {
+  color: black;
+}
+
+.box {
+  position: absolute;
+  width: 240px;
+  padding: 10px 20px;
+  height: 158px;
+  overflow: hidden;
+  margin-top: -20px;
+  left: 42%;
+  background: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.firstoption {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.submit {
+  width: 100%;
+  height: 30px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.submit > .button {
+  background: gray;
+  padding: 5px 7px;
+}

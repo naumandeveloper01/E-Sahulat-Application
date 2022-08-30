@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="shortcut icon" href="./../../assert/favicon/favicon.webp" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!------------------------------>
+    <!------Mobile Main Button----->
+    <!------------------------------>
+    <div class="androidonofflight"></div>
+    <div class="btn volumeup"></div>
+    <div class="btn volumedown"></div>
+    <div class="btn mainbtn"></div>
+
+
+    <!-------------------------------------->
+    <!------ Android Mobile Start Here ----->
+    <!-------------------------------------->
+
+    <div class="andriod">
+        <div class="andriodScreen">
+            <div class="dashboard">
+                <!-- navbar  -->
+
+                <!-- head section -->
+                <div class="accountinfo">
+                    <div class="username">
+                        <h4>Welcome, <span class="name"></span></h4>
+                    </div>
+                    <div class="userbalance">
+                        <h3 class="bold">Rs. <span class="currentbalance"></span></h3>
+                    </div>
+                    <div class="lastpreview">
+                        <!-- Last view date -->
+                        <h4>Last updated at <span class="lastview"></span></h4>
+                    </div>
+                </div>
+                <!-- header image -->
+                <div class="head">
+                </div>
+                <div class="body">
+                    <div class="firstpart">
+                        <div class="part1">
+                            <img class="button" src="../../assert/dashboard/body/icon(1).jpg" alt="Financial Services">
+                            <p class="block">Financial</p>
+                            <p class="block">Services</p>
+                        </div>
+                        <div class="part2">
+                            <img class="button" src="../../assert/dashboard/body/icon(2).jpg" alt="Financial Services"
+                                id="bill">
+                            <p class="block">Utility Bill</p>
+                            <p class="block">Payment</p>
+                        </div>
+                    </div>
+                    <div class="secondpart">
+                        <div class="part1">
+                            <img class="button" src="../../assert/dashboard/body/icon(3).jpg" alt="Financial Services">
+                            <p class="block">Mobile</p>
+                            <p class="block">Recharge</p>
+                        </div>
+                        <div class="part2">
+                            <img class="button" src="../../assert/dashboard/body/icon(4).jpg" alt="Financial Services">
+                            <p class="block">Citizen</p>
+                            <p class="block">Verification</p>
+                        </div>
+                    </div>
+                    <!-- <div class="secondpart"> -->
+                    <!-- <img class="button" src="" alt="">
+                        <img src="" alt=""> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bill Payment Options -->
+    <div class="box none">
+        <div class="heading">
+            <h4>Select Bill Payment Option</h4>
+        </div>
+        <div class="firstoption">
+            <input type="radio" class="button" name="bill" id="singlebill">
+            <p>Single Bill Payment</p>
+        </div>
+        <div class="firstoption">
+            <input type="radio" class="button" name="bill" id="bulkbill">
+            <p>Bulk Bill Payment</p>
+        </div>
+        <div class="submit">
+            <div class="button cancel">Cancel</div>
+            <div class="button process">Processed</div>
+        </div>
+    </div>
+
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

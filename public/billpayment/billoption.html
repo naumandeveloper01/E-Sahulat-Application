@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./billoption.css">
+    <link rel="shortcut icon" href="../../assert/favicon/favicon.webp" type="image/x-icon">
+    <title>Utility Bill Payment</title>
+</head>
+<body>
+    <!------------------------------>
+    <!------Mobile Main Button----->
+    <!------------------------------>
+    <div class="androidonofflight"></div>
+    <div class="btn volumeup"></div>
+    <div class="btn volumedown"></div>
+    <div class="btn mainbtn"></div>
+
+
+    <!-------------------------------------->
+    <!------ Android Mobile Start Here ----->
+    <!-------------------------------------->
+
+    <div class="andriod">
+        <div class="andriodScreen">
+            <div class="billoption">
+                <div class="optionlist">
+                    <div class="first">
+                        <img src="../../assert/billpayment/icon (1).jpg" alt="">
+                        <p>Water</p>
+                    </div>
+                    <div class="first">
+                        <img src="../../assert/billpayment/icon (5).jpg" alt="">
+                        <p>Electricity</p>
+                    </div>
+                    <div class="first">
+                        <img src="../../assert/billpayment/icon (4).jpg" alt="">
+                        <p>Gas</p>
+                    </div>
+                    <div class="first">
+                        <img src="../../assert/billpayment/icon (3).jpg" alt="">
+                        <p>Telephone</p>
+                    </div>
+                    <div class="first">
+                        <img src="../../assert/billpayment/icon (2).jpg" alt="">
+                        <p>Other</p>
+                    </div>
+                </div>
+                <div class="body">
+                    <!-- select company here -->
+                    <div class="selectcmpy">
+                        <div class="text">Select Utility</div>
+                        <div class="down button">&#9660</div>
+                    </div>
+                    <input class="m-5" type="text" name="" id="consumernumber" placeholder="Consumer Number">
+                    <!-- userpassword section -->
+                    <div class="userpassword">
+                        <i class="fa fa-lock"></i>
+                        <input class="m-5" type="text" id="password" placeholder="Account Number">
+                    </div>
+                    <!-- password enable/disable toggle button -->
+                    <div class="switchbox">
+                        <div class="tooglebtn">
+                            <div class="space">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>Use Account Holder Number</h4>
+                        </div>
+                    </div>
+                    <!-- Select the mobile provider -->
+                    <div class="selectcmpy2">
+                        <div class="text">Select Mobile Provider</div>
+                        <div class="down2 button">&#9660</div>
+                    </div>
+                    <input class="m-5" type="text" name="" id="mobilenb" placeholder="MOBILE NUMBER">
+                    <button class="button paybill">Pay Bill</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="companylist none">
+        <div class="heading">
+            <h4>Select Utility Company</h4>
+        </div>
+        <div class="search">
+            <div class="img"></div>
+            <div class="input">
+                <input type="text" name="" id="">
+            </div>
+
+        </div>
+        <p>Select Utility Company</p>
+        <p class="p-5 button">SNGPL</p>
+        <p class="p-10 button">SSGC</p>
+        <button class="selected button">OK</button>
+    </div>
+    <!-- Mobile Number Provider Box -->
+    <div class="companylist2 none">
+        <div class="heading">
+            <h4>Select Mobile Provider</h4>
+        </div>
+        <div class="search">
+            <div class="img"></div>
+            <div class="input">
+                <input type="text" name="" id="">
+            </div>
+
+        </div>
+        <p class="p-5 button">MOBILINK</p>
+        <p class="p-10 button">TELENOR</p>
+        <p class="p-10 button">UFONE</p>
+        <p class="p-10 button">ZONG</p>
+        <button class="selectednumber button">OK</button>
+    </div>
+
+    <!------------------------------------>
+    <!-- new page screen start here -->
+    <!------------------------------------>
+    <div class="paybillscreen none">
+        <div class="consumeroutput">
+            <p>Consumer Number </p>
+            <input class="m-5" type="text" id="consumervalue" readonly>
+        </div>
+        <div class="consumerdetail">
+            <p>Consumer Detail </p>
+            <input class="m-5" type="text" id="consumerdetail" readonly>
+            <input class="m-5" type="text" id="consumerfather" readonly>
+        </div>
+        <div class="billnow">
+            <p>Bill Now </p>
+            <input class="m-5" type="text" id="duebill" readonly>
+        </div>
+        <div class="afterbill">
+            <p>After Bill</p>
+            <input class="m-5" type="text" id="latebill" readonly>
+        </div>
+        <div class="duedate">
+            <p>Due Date</p>
+            <input class="m-5" type="text" id="duebilldate" readonly>
+        </div>
+        <div class="buttons">
+            <button class="button payit">Pay Now</button>
+            <button class="button printbill">Print</button>
+        </div>
+    </div>
+    <!------------------------------------>
+    <!-- new page screen box of the bill is paid -->
+    <!------------------------------------>
+    <div class="billpaid hide">
+        <div class="head">
+            <div class="icon">!</div>
+            <h4>Transaction is Successfully.</h4>
+        </div>
+        <div class="body">
+            <p>Detail of the transaction is given below.</p>
+            <p>TID: 5021234523423535</p>
+            <button class="complete btn">OK</button>
+        </div>
+    </div>
+
+    <script src="./billoption.js"></script>
+</body>
+</html>
